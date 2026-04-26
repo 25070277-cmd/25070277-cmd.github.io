@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hai yen - Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #335599; 
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 700px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #800000; 
+            font-size: 18px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 0;
+            vertical-align: middle;
+        }
+
+        .label-col {
+            width: 150px;
+        }
+
+        input[type="text"], 
+        input[type="password"], 
+        select {
+            border: 1px solid #888;
+            padding: 3px;
+        }
+
+        .hint-text {
+            color: #335599;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        /* Group Interest Checkboxes */
+        .interest-table td {
+            padding: 3px 0;
+            font-size: 14px;
+        }
+
+        /* Nút Register kiểu Gradient đỏ */
+        .register-btn {
+            background: linear-gradient(to bottom, #e00000 0%, #800000 100%);
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 10px 30px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            display: block;
+            margin: 20px auto;
+        }
+
+        .register-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>REGISTRATION</h2>
+    <hr>
+
+    <form>
+        <table>
+            <tr>
+                <td class="label-col">Username:</td>
+                <td><input type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" size="30"></td>
+            </tr>
+            <tr>
+                <td>Re-type Password:</td>
+                <td><input type="password" size="30"></td>
+            </tr>
+
+            <tr><td colspan="2"><hr></td></tr>
+
+            <tr>
+                <td>Birthday:</td>
+                <td>
+                    <select>
+                        <option>[select one]</option>
+                        <option>January</option>
+                        <option>February</option>
+                        </select> , 
+                    <input type="text" size="5"> , 
+                    <input type="text" size="8">
+                    <span class="hint-text">(Month Day, Year)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Images:</td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr><td colspan="2"><hr></td></tr>
+
+            <tr>
+                <td colspan="2">
+                    First Name: <input type="text" size="15"> &nbsp;&nbsp;
+                    Last Name: <input type="text" size="18">
+                </td>
+            </tr>
+
+            <tr><td colspan="2"><hr></td></tr>
+
+            <tr>
+                <td colspan="2">Interests (optional):</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <table class="interest-table">
+                        <tr>
+                            <td><input type="checkbox"> Entertainment</td>
+                            <td><input type="checkbox"> Business</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"> Home & Family</td>
+                            <td><input type="checkbox"> Computers & Technology</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"> Health</td>
+                            <td><input type="checkbox"> Personal Finance</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"> Music</td>
+                            <td><input type="checkbox"> Small Business</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit" class="register-btn">REGISTER</button>
+    </form>
+</div>
+
+</body>
+</html>
